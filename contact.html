@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./neu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    :root{
+            --maincolor:#fbf5ef;
+            --mainmenuheight: 35px;
+        }
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            background:var(--maincolor);
+        }
+        body{
+            width: 1050px;
+            background: var(--maincolor);
+            margin: 0 auto;
+            padding:0 8px;
+        }
+        #banner {
+            margin-left:50px;
+            width: 100%;
+        }
+        #main-menu{
+            height: 60px;
+            width: 1052px;
+            background-color: #f6d8ce;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            float: left;
+            text-transform: uppercase;
+        }
+        #main-menu>ul{
+            list-style-type: none;
+        }
+        #main-menu>ul>li{
+            height:100%;
+            float:left;
+            text-align: center;
+            line-height: 52px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size:0.9rem;
+            padding: 0 18px;
+            position: relative;
+            margin-left: 30px;
+        }
+        #main-menu>ul>li>a{
+            color:#F78181;
+            text-decoration: none;
+        }
+        #main-menu>ul>li:hover{
+            color: #DF3A01;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #main-menu>ul>li:hover >a{
+            color:#DF3A01;
+        }
+        #main-menu>ul>li>ul{
+            list-style-type:none;
+            width:250px;
+            position: absolute;
+            z-index: 1;
+            left:0;
+            display:none;
+            background:var(--maincolor);
+        }
+        #main-menu>ul>li:hover >ul{
+            display:block;
+            padding:8px 0;
+        }
+        #main-menu>ul>li>ul>li{
+            font-size:0.9rem;
+            text-transform: none;
+            font-weight: normal;
+            height: 35px;
+            line-height: 35px;
+            background:var(--maincolor);
+            color:white;
+            text-align: left;
+            padding:0 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            position: relative;
+        }
+        #main-menu>ul>li>ul>li:hover{
+            color: #FE642E;
+            background:var(--maincolor);
+            animation: slide 1s;
+        }
+        #main-menu>ul>li>ul>li:hover>a{
+            color: #FE642E;
+        }
+        #main-menu>ul>li>ul>li>a{
+            color: #FE642E;
+            text-decoration: none;
+        }
+        @keyframes slide {
+            0%{left:8px;}
+            20%{left:-6.5px;}
+            40%{left:5px;}
+            60%{left:-3.5px;}
+            80%{left:2px;}
+            100%{left:0;}
+        }
+        #gt img{
+            margin-left: 50px;
+            width: 1050px;
+            height: 400px;
+            margin-bottom: 35px;
+        }
+        #footer{
+        height: 198px;
+        width: 1050px;
+        background: #F78181;
+        margin-top: 25px;
+        margin-left: 50px;
+        display: block;
+        float: left;
+        }
+        #footer .leftfooter{
+            float: left;
+            color: #B43104;
+            margin-top: 35px;
+            margin-bottom: 35px;
+        }
+        #footer .leftfooter .line2>span{
+            color: white;
+            width: 20px;
+            height: 20px;
+            float: left;
+            font-size: 1rem;
+        }
+        #footer .leftfooter .line2>p{
+            margin-left: 5px;
+            display: inline-block;
+            float: left;
+        }
+        #footer .leftfooter .line3{
+        }
+        #footer .leftfooter .line3>p{
+            margin-left: 5px;
+            display: inline-block;
+        }
+        #footer .leftfooter .line3>p>span{
+            font-size: 1rem;
+            color: white;
+        }
+        #footer .leftfooter .line3>a{
+            text-decoration: none;
+            color: #B43104;
+        }
+        #footer .rightfooter{
+            margin-left: 200px;
+            margin-top: 20px;
+            float: left;
+        }
+        #footer .rightfooter .line1{
+            display: inline-block;
+        }
+        #footer .rightfooter .line1>a{
+            color: white;
+            font-size: 2rem;
+            margin-left: 22px;
+	        text-decoration:none;
+        }
+        #footer .rightfooter .line1>a>img{
+            width: 81px;
+            height: 81px;
+        }
+        #footer .rightfooter .line2{
+            margin-top: 15px;
+        }
+        #footer .rightfooter .line2>a{
+            display: inline-block;
+            color: black;
+            text-decoration: none;
+        }
+        #footer .rightfooter .line2>a>p{
+            float: left;
+        }
+        #footer .rightfooter .line2>a>p>span{
+            float: left;
+            color: black;
+        }
+</style>
+<body>
+    <div id="banner">
+        <img src="banner.png" alt="">
+    </div>
+    <div id="main-menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="">Dự án</a>
+                    <ul>
+                        <li><a href="">Phòng khách</a></li>
+                        <li><a href="">Phòng ăn</a></li>
+                        <li><a href="">Phòng ngủ</a></li>
+                        <li><a href="">Phòng làm việc</a></li>
+                        <li><a href="">Phòng học</a></li>
+                        <li><a href="">Ban công</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Thiết kế nội thất</a> 
+                    <ul>
+                        <li><a href="">Thiết kế nội thất chung cư</a></li>
+                        <li><a href="">Thiết kế nội thất văn phòng</a></li>
+                        <li><a href="">Thiết kế nội thất nhà phố</a></li>
+                        <li><a href="">Thiết kế nội thất căn hộ</a></li>
+                        <li><a href="">Thiết kế nội thất cửa hàng</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Phong cách thiết kế</a>
+                    <ul>
+                        <li><a href="">Nội thất hiện đại</a></li>
+                        <li><a href="">Industrial</a></li>
+                        <li><a href="">Scandinavian</a></li>
+                        <li><a href="">Tân cổ điển</a></li>
+                        <li><a href="">Mix and match</a></li>
+                    </ul>
+                </li>
+                <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="hình 4.png">Contact</a>
+                </li>
+            </ul>
+    </div>
+    <div id="gt">
+        <img src="5.png" alt="">
+    </div>
+    <div id="footer">
+        <div class="leftfooter">
+            <p>Decor nhà xinh- Tổ ấm của bạn</p>
+            <div class="line2">
+                <span class="fa fa-home"></span>
+                <p>Số 102, Phố Đường Láng, Quận Đống Đa, Hà Nội, Vietnam</p>
+            </div>
+            <div class="line3">
+                <p>
+                <span class="fa fa-phone"></span>
+                <p>(84)24.36.280.280</p>
+                </p>
+                <p>
+                    <span class="fa fa-fax"></span>
+                    <p>(84)24.38.695.992</p>
+                </p>
+            </div>
+        </div>
+        <div class="rightfooter">
+            <div class="line1">
+                <a href="" class="fa fa-facebook"></a>
+                <a href="" class="fa fa-youtube"></a>
+                <a href="" class="fa fa-twitter"></a>
+            </div>
+            <div class="line2">
+                <p>Mọi đóng góp xin gửi về: <a href="">Hello@decornhaxinh.com</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
